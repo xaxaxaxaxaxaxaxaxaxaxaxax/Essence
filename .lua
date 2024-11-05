@@ -1,5 +1,12 @@
 getgenv().Essence = {
+    MobileSupport = true,
+    
     Aimbot = {
+        Binding = {
+            Key = "Q", -- Default key
+            Mode = "Toggle", -- Options: "Toggle", "Hold"
+            UserInputType = "Keyboard" -- Options: "Keyboard", "Mouse", "Gamepad1", "Touch"
+        },
         Velocity = {
             Type = "Velocity", -- Options: "Velocity", "AssemblyLinearVelocity", "PositionDelta"
             Prediction = {
@@ -21,9 +28,16 @@ getgenv().Essence = {
         },
         Notify = true
     },
+    
     Macro = {
-        Enabled = true
+        Enabled = true,
+        Binding = {
+            Key = "X", -- Default key
+            Mode = "Toggle", -- Options: "Toggle", "Hold" 
+            UserInputType = "Keyboard" -- Options: "Keyboard", "Mouse", "Gamepad1", "Touch"
+        }
     },
+    
     Visuals = {
         Highlight = {
             Enabled = true,
@@ -33,6 +47,7 @@ getgenv().Essence = {
             OutlineTransparency = 0 -- Range: 0 to 1
         }
     },
+    
     World = {
         Enabled = false,
         Textures = {
